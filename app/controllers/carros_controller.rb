@@ -1,11 +1,12 @@
 class CarrosController < ApplicationController
   def index
-    @carros = Carro.todos
+    # require 'byebug'
+    # debugger
+    @carros = Carro.all
   end
 
   def show
-    carros = Carro.todos
-    id = params[:id]
-    @carro = carros.find { |c| c.id == id }
+    @carro = Carro.find(params[:id])
+    
   end
 end
