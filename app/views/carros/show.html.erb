@@ -1,0 +1,26 @@
+<section style="text-align: left;">
+
+    <h1>Detalhes do Carro</h1>
+    <hr>
+    <p>
+        <strong>ID:</strong>
+        <%= @carro.id %>
+    </p>
+
+    <p>
+        <strong>Nome:</strong>
+        <%= @carro.nome %>
+    </p>
+
+    <p>
+        <strong>Modelo:</strong>
+        <%= @carro.modelo %>
+    </p>
+
+    <p>
+        <strong>Ano:</strong>
+        <%= @carro.ano %>
+    </p>
+
+    <%= link_to 'Voltar para a lista de carros' , carros_path ,"class":"btn btn-primary" %>
+</section>

@@ -1,11 +1,16 @@
-<h1>Pagina de Home</h1>
+<h1>Bem vindo pessoal</h1>
 
-<ul>
-    <%@itens.each do |item|%>
-        <li>
-            <%= item %>
-        </li>
-    <%end%>
-</ul>
+<section class="py-5 text-center container">
 
-<%= link_to  'Pagina sobre', sobre_path%>
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Bem vindo ao sistema de veiculos</h1>
+            <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the
+                creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.
+            </p>
+            <p>
+                <a href="/carros" class="btn btn-primary my-2">Ver carros</a>
+            </p>
+        </div>
+    </div>
+</section>
